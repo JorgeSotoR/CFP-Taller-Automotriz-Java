@@ -1,0 +1,49 @@
+CONCLUSIONES - PROYECTO TALLER AUTOMOTRIZ
+Conceptos Fundamentales de Programacion - Politecnico Grancolombiano
+Autor: Jorge Adrian Soto Reyes
+
+1. LO APRENDIDO DURANTE EL DESARROLLO DEL PROYECTO
+
+- A leer y escribir archivos de texto plano en Java (BufferedReader, BufferedWriter)
+  y a cerrarlos de forma segura con try-with-resources.
+- A cruzar informacion de varios archivos usando estructuras como HashMap, donde
+  buscar un repuesto por su ID o un mecanico por su documento es inmediato.
+- A ordenar listas con Collections.sort y un Comparator para generar reportes de
+  mayor a menor.
+- A no confiar en que los datos de entrada siempre son correctos: validar precios,
+  cantidades e identificadores, y descartar lo incoherente sin que el programa se
+  caiga.
+- A organizar el codigo en paquetes y clases con una sola responsabilidad (modelo,
+  lectura, reportes, menu) y a documentarlo con Javadoc.
+- A usar estructuras de control (if, switch, while) para construir un menu de
+  consola con busquedas y filtros.
+- A trabajar de forma incremental con un repositorio en GitHub, marcando cada
+  entrega con una etiqueta para conservar el historial.
+- A usar herramientas de IA como asistentes, revisando y probando lo que proponen
+  en lugar de aceptarlo sin entenderlo.
+
+2. POSIBLES APLICACIONES EN LA VIDA PROFESIONAL
+
+- Automatizar reportes que hoy se hacen a mano en hojas de calculo: consolidar
+  archivos de ventas, inventarios o nominas y obtener rankings en segundos.
+- Control de inventario: la alerta de repuestos por reponer es la base de un
+  sistema que avise al area de compras antes de que falte un producto.
+- Limpieza y validacion de datos antes de cargarlos en otros sistemas, detectando
+  registros duplicados, negativos o que no existen en los catalogos.
+- La forma de pensar entrada -> proceso -> salida sirve para analizar cualquier
+  proceso de negocio, no solo para programar.
+
+3. DIFICULTADES PRESENTADAS
+
+- En la primera version, las ordenes de trabajo usaban documentos de mecanicos
+  generados al azar que no existian en el catalogo, por lo que el cruce no
+  funcionaba. Se corrigio asignando cada orden a un mecanico ya generado.
+- Mantener las firmas exactas de los metodos que pide el enunciado mientras se
+  adaptaba el problema al contexto del taller.
+- Al generar los datos varias veces quedaban ordenes viejas que ya no
+  correspondian a ningun mecanico; hubo que borrarlas antes de cada generacion.
+- Equilibrar la regla del enunciado de no pedir datos al usuario con el menu de
+  consola propuesto para esta idea de proyecto. Se resolvio dejando el menu como
+  interfaz principal y un modo automatico con el argumento --auto.
+- Configurar correctamente el proyecto en Eclipse y en el repositorio (archivos
+  .project, .classpath y configuraciones de ejecucion).
